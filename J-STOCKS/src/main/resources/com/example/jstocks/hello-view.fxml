@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.jstocks.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="363.0" layoutY="39.0" prefHeight="522.0" prefWidth="400.0" styleClass="card">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <PasswordField layoutX="75.0" layoutY="274.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter Password" />
+            <TextField layoutX="75.0" layoutY="183.0" prefHeight="45.0" prefWidth="250.0" promptText="Enter Username" />
+            <Text fill="WHITE" layoutX="151.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Pane fx:id="onLoginButtonClicked" layoutX="100.0" layoutY="397.0" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3a0ca3;;" styleClass="sign-in" stylesheets="@css/styles.css">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="52.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.12194931507110596" green="0.7003716826438904" blue="0.9684210419654846" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Pane>
+         </children></Pane>
+      <Text fill="#f7f7f7" fontSmoothingType="LCD" layoutX="58.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="276.0" fitWidth="466.0" layoutX="-103.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+.parent{
+    -fx-background-color: #3a0ca3;
+}
+
+.card{
+    -fx-background-color: #4361ee;
+    -fx-background-radius: 25px;
+
+}
+.sign-in{
+    -fx-background-colour:  #3a0ca3;
+    -fx-background-radius: 10px;
+}

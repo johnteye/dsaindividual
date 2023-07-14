@@ -5,4 +5,6 @@ module com.example.jstocks {
 
     opens com.example.jstocks to javafx.fxml;
     exports com.example.jstocks;
+    exports com.example.jstocks.controller;
+    opens com.example.jstocks.controller to javafx.fxml;
 }
