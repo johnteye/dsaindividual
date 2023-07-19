@@ -1,3 +1,10 @@
+/*
+
+John Teye Doku
+
+10907609
+ */
+
 package com.example.jstocks;
 
 import javafx.application.Application;
